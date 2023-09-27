@@ -1,9 +1,14 @@
 import React from "react";
-import {Text} from "react-native";
+import {Text, View, Image} from "react-native";
+import { styles } from "./style";
+
 
 const Splash = () => {
     return (
-        <Text>You'll Find All you need Here!</Text>
+        <View>
+            <Image resizeMode='contain' style={styles.image} source={require('../../../assets/splash_image.png')}/>
+            <Text style={styles.title} >You'll Find <Text style={styles.innerTitle}>All you need</Text> Here!</Text>
+        </View>
     )
 }
 
